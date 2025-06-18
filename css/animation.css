@@ -1,0 +1,132 @@
+.animation .s1,
+ .animation .s2{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+
+}
+
+.animation {
+    position: relative;
+}
+
+.animation span {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    animation: identifier linear 2s infinite;
+    animation-fill-mode: both;
+    
+}
+.animation .s2 span{
+    animation: identifiers linear 2s infinite;
+    
+}
+
+
+
+
+.animation .s1 span:nth-child(2),
+.animation .s2 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.animation .s1 span:nth-child(3),
+.animation .s2 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.animation .s1 span:nth-child(4),
+.animation .s2 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.animation .s1 span:nth-child(5),
+.animation .s2 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.animation .s1 span:nth-child(6),
+.animation .s2 span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.animation .s1 span:nth-child(7),
+.animation .s2 span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+
+
+
+
+
+
+
+@keyframes identifier {
+    0% {
+        translate: 0 0;
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+        translate: 0 50px;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        translate: 0 100px;
+        transform: scale(0.5);
+    }
+
+    75% {
+        translate: 0 50px;
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    100% {
+        translate: 0 0;
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+}
+
+@keyframes identifiers {
+    0% {
+        translate: 0 0;
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+        translate: 0 -50px;
+        transform: scale(0.3);
+    }
+
+    50%{
+        opacity: 1;
+        translate: 0 -100px;
+        transform: scale(0.5);
+    }
+
+    75% {
+        translate: 0 -50px;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        translate: 0 0;
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+}

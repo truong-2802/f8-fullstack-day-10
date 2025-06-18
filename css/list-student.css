@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  padding: 40px;
+}
+
+.team-container {
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.member-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+  
+}
+
+
+.member-card img{
+    filter: grayscale(100%);
+    transition: scale ease 1s;
+
+}
+
+.member-card img:hover{
+    scale: 110%;
+    filter: grayscale(0);
+}
+
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+.member-card h3 {
+  margin: 12px 0 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+.member-card .role {
+  color: #888;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.member-card p {
+  font-size: 14px;
+  color: #555;
+}
